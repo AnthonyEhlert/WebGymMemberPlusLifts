@@ -12,7 +12,7 @@
     <h2> Member Name: ${liftScoreToEdit.gymMember.firstName} ${liftScoreToEdit.gymMember.lastName}</h2>
     <form action = "editLiftScoreServlet" method = "post">
         Date: <input type = "date" name = "dateOfScore" value = "${liftScoreToEdit.dateOfScore}"><br><br>
-        Score: <input type = "text" name = "score" value = "${liftScoreToEdit.score}"><br><br>
+        Score: <input type = "number" name = "score" min = "1" value = "${liftScoreToEdit.score}"><br><br>
         <input type = "hidden" name = "id" value="${liftScoreToEdit.id}">
         <input type = "submit" value="Save Lift Score">
     </form>
